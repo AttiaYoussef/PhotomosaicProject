@@ -7,7 +7,7 @@ It presents our approach to create photomosaics based on natural language input,
 
 This project is meant to run on Google Colab, not only for the hardware used but also because of some installation difficulties when trying to run it locally.
 
-The file to run is called "Photomosaic.ipynb", and to be able to run it, it has to be imported via the Google colab interface, and all associated Python files have to be imported as well in the root of the notebook.
+The file to run is in the "ColabDemo" folder, and is called "Photomosaic.ipynb".
 
 ## Images for the photomosaic part
 
@@ -22,3 +22,30 @@ Imagenet mini: https://drive.google.com/drive/folders/18k6vgz4U-FGjL4NP9eJkc2gn5
 [Step 1](https://github.com/AttiaYoussef/PhotomosaicProject/blob/main/step1.jpg?raw=true)
 
 [Step 2](https://github.com/AttiaYoussef/PhotomosaicProject/blob/main/step2.png?raw=true)
+
+## Files
+
+### Photomosaic.ipynb 
+
+The main notebook of this project. Has to be ran on Google Colab. When running it, please follow the instructions at the top of the notebook (i.e restarting the kernel after running the "Pre installation cell")
+
+### helpers.py
+
+Script of helper functions, most notably contains the custom penalties that we defined.
+
+### imagenet_colors.json 
+
+Contains for each image from the training set of the "Imagenet mini" dataset, the mean RGB values of the left of the image and of its right
+
+### tiles_color.json 
+
+Contains for each image from the cat part of the "Dog & Cat" dataset, the mean RGB values of the left of the image and of its right
+
+## Authors
+
+@AttiaYoussef
+
+@TorgemanTarak
+
+@iserenko
+## References
