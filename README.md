@@ -18,3 +18,7 @@ Links to the datasets:
 Cats: https://drive.google.com/drive/folders/1k4bR0nhJSBcqVH23JKRorbFj0wtuqAgY?usp=sharing
 
 Imagenet mini: https://drive.google.com/drive/folders/18k6vgz4U-FGjL4NP9eJkc2gn5J3a87nV?usp=sharing
+
+[Step 1](https://github.com/AttiaYoussef/PhotomosaicProject/blob/main/step1.jpg?raw=true)
+
+[Step 2](https://github.com/AttiaYoussef/PhotomosaicProject/blob/main/step2.png?raw=true)
