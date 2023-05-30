@@ -49,3 +49,12 @@ Contains for each image from the cat part of the "Dog & Cat" dataset, the mean R
 
 @iserenko
 ## References
+
+Li, Tzu-Mao, et al. "Differentiable vector graphics rasterization for editing and learning." ACM Transactions on Graphics (TOG) 39.6 (2020): 1-15, [PDF](https://people.csail.mit.edu/tzumao/diffvg/diffvg.pdf).
+
+---
+Radford, Alec, et al. "Learning transferable visual models from natural language supervision." International conference on machine learning. PMLR, 2021, [PDF](https://arxiv.org/pdf/2103.00020.pdf)
+
+---
+
+Frans, Kevin, Lisa Soros, and Olaf Witkowski. "Clipdraw: Exploring text-to-drawing synthesis through language-image encoders." Advances in Neural Information Processing Systems 35 (2022): 5207-5218, [PDF](https://arxiv.org/pdf/2106.14843.pdf)
