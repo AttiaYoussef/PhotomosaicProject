@@ -4,6 +4,9 @@ import pandas as pd
 import pydiffvg
 import torch.nn.functional as F
 
+
+
+
 def check_colinear(v, w): # check whether or not two vectors are colinear, useful to force a parallelogram
   return torch.abs((torch.norm(v) * torch.norm(w)) - torch.dot(v,w)) < 1e-12
 
@@ -71,3 +74,43 @@ def penalizing_empty_space(centers):
       min_distance = tmp.min()
       distances[i] = min_distance
   return distances.max()
+
+
+
+def save_images_main_colors(tile_photos_path, all_paths = False, image_format = 'jpg', tiles_path = "./cats_colors.json"):
+    """
+    Method that is launched only once by us to save the images from either the Imagenet-Mini or the Dogs & Cats 
+    dataset
+    Do not launch it again
+    """
+    tiles_data = {}
+    i = 0
+    print("Saving images")
+    if all_paths:
+        for file in tile_photos_path:
+            if i % 1000 == 0:
+                print("Iteration {0}".format(i))
+      
+            tile = np.array(PIL.Image.open(file))
+            left_color = tile[:,:15].mean(axis = 0).mean(axis = 0)/255
+            right_color = tile[:][-16:-1].mean(axis = 0).mean(axis = 0)/255
+            tiles_data[file] = [left_color.tolist(), right_color.tolist()]
+            i+=1
+    
+        with open(tiles_path, 'w') as f:
+            json.dump(tiles_data, f)
+    else:
+
+        for file in glob.glob(tile_photos_path + "/*.{0}".format(image_format)):
+      #print(file)
+            if i % 1000 == 0:
+                print("Iteration {0}".format(i))
+      
+            tile = np.array(PIL.Image.open(file))
+            left_color = tile[:,:15].mean(axis = 0).mean(axis = 0)/255
+            right_color = tile[:][-16:-1].mean(axis = 0).mean(axis = 0)/255
+            tiles_data[file] = [left_color.tolist(), right_color.tolist()]
+            i+=1
+
+        with open(tiles_path, 'w') as f:
+            json.dump(tiles_data, f)
