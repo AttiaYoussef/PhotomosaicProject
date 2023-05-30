@@ -3,15 +3,15 @@
 This repository is associated with the work of the same name in the context of the CS-413 EPFL course "Computational Photography". 
 It presents our approach to create photomosaics based on natural language input, first by creating the mosaic itself, than filling the generated mosaic with corresponding images.
 
-## How to run
+## How to run (IMPORTANT)
 
 This project is meant to run on Google Colab, not only for the hardware used but also because of some installation difficulties when trying to run it locally.
 
-The file to run is in the "ColabDemo" folder, and is called "Photomosaic.ipynb".
+The notebook to run is called "Photomosaic.ipynb", and you need to follow the instructions on top of the notebook to be able to run it, as well as follow the short tutorial for the images in the next paragraph.
 
 ## Images for the photomosaic part
 
-In order to be able to run the photomosaic part, you are going to need to do some manipulations on your Google Drive account. There are two datasets of images that are shared via links, and for both these datasets, you have to add a shortcut to that folder in the root of your Google Drive.
+In order to be able to run the photomosaic part, you are going to need to do some manipulations on your Google Drive account. There are two datasets of images that are shared via links, and for both these datasets, you have to add a shortcut to that folder in the root of your Google Drive. The process is describe in the images "Step x" below.
 
 Links to the datasets:
 
