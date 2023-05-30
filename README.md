@@ -37,7 +37,7 @@ Script of helper functions, most notably contains the custom penalties that we d
 
 Contains for each image from the training set of the "Imagenet mini" dataset, the mean RGB values of the left of the image and of its right
 
-### tiles_color.json 
+### cats_colors.json 
 
 Contains for each image from the cat part of the "Dog & Cat" dataset, the mean RGB values of the left of the image and of its right
 
