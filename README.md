@@ -1,4 +1,4 @@
-# Text to Photomosaic
+# Team 9 : Text to Photomosaic
 
 This repository is associated with the work of the same name in the context of the CS-413 EPFL course "Computational Photography". 
 It presents our approach to create photomosaics based on natural language input, first by creating the mosaic itself, than filling the generated mosaic with corresponding images.
