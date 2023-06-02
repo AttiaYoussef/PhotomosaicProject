@@ -55,6 +55,10 @@ Contains for each image from the cat part of the "Dog & Cat" dataset, the mean R
 @TorgemanTarak
 
 @iserenko
+
+## Slides
+
+Here are the [slides](https://docs.google.com/presentation/d/14XapxpjryCm0koGqu4XQ-jVUwZJVCujtQQq53SY-aUA/edit?usp=sharing) that are associated with this project
 ## References
 
 Li, Tzu-Mao, et al. "Differentiable vector graphics rasterization for editing and learning." ACM Transactions on Graphics (TOG) 39.6 (2020): 1-15, [PDF](https://people.csail.mit.edu/tzumao/diffvg/diffvg.pdf).

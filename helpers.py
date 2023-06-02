@@ -19,7 +19,7 @@ def create_polygon_from_center_and_orientation(center, angle, width, factor):
     Creates, using a center and an angle, a polygon representing a square with that center and rotated by that angle
 
     center: a tensor, the center of the square
-    angle: a tensor(float), the angle by which the square is turned
+    angle: a tensor(float), the angle by which the square is rotated
     width: int, the width of the canvas
     factor: float, the length of one diagonal of the square
   """
@@ -42,13 +42,15 @@ def create_polygon_from_center_and_orientation(center, angle, width, factor):
 
 def centers_penalization(centers, threshold_distance):
   """
-  center1: tensor corresponding to a given center
-  other_centers: tensor containing all centers except center1
-  threshold_distance: float over which the distance is not penalized, under which it is
+  
+  
 
   Penalizes the distance between centers to avoid overlapping of squares. It is done as:
-  1) If the distance between two centers is big, it is not taken into account into penalization
+  1) If the distance between two centers is bigger than the diagonal of any square, it is not taken into account in the penalization
   2) Otherwise it is, like some kind of reverse ReLU
+
+  centers: tensor containing all centers 
+  threshold_distance: float over which the distance is not penalized, under which it is. It's the diagonal of the squares
   """
   final = 0
   for i, center1 in enumerate(centers):
@@ -64,7 +66,9 @@ def penalizing_empty_space(centers):
   """ 
   applies the penalization of empty space, i.e the L = max(min(|| ci - cj||**2)), as per the TA's suggestion
   will also try the L = min(max(|| ci - cj||**2))
-  
+  Not used in the final version of the code
+
+  centers: list of tensors. The list of square centers at the current iteration
   """
   distances = torch.zeros(len(centers))
   for i in range(len(centers)):
